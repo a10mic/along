@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Along · Privacy</title>
+<style>
+  body { margin: 0; background: #f5f1ea; color: #26241f; font: 17px/1.6 Georgia, serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-weight: 500; font-size: 32px; margin: 0 0 8px; }
+  h2 { font-weight: 500; font-size: 20px; margin: 36px 0 8px; }
+  p, li { color: #26241f; } .muted { color: #6b665c; }
+  a { color: #4f6f5c; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy</h1>
+<p class="muted">Along · last updated 10 October 2026</p>
+
+<p>Along is a day planner. This page says plainly what it keeps, where, and why. The short version: use it without an account and your days never leave your phone; the one feature that needs our server is "Break it down".</p>
+
+<h2>Using Along without an account</h2>
+<p>This is the default. Everything you write — thoughts, steps, routines, settings — is stored only on your phone. We do not receive it, and we cannot see it. Deleting the app deletes it.</p>
+<p>The one exception is "Break it down". When you ask Along to break a thought into steps, the text of that thought is sent to our server, which asks an AI model for the steps. To do this your phone sends a random install id it made for itself. The id is not linked to you, your email, your device identifiers or your other thoughts. We keep a count of how many breakdowns that id has used, and whether it has bought the unlock. We cache the resulting steps, keyed by the text, so the same thought is never processed twice; the cache does not record which phone asked.</p>
+
+<h2>Using Along with an account</h2>
+<p>If you sign in with Apple or Google, we store the identifier those services give us (never your password), the time zone your phone reports, and the thoughts, steps, routines and settings you create, so they can follow you to another device. We do not ask for or store your name or email address. Sign-in sessions use short-lived tokens that you can end at any time by signing out.</p>
+
+<h2>The AI model</h2>
+<p>Breakdowns are produced by a model provided by Anthropic, under terms that do not allow them to train on your text. Only the text of the thought being broken down is sent; never your other thoughts, your plan, or anything that identifies you.</p>
+
+<h2>Purchases</h2>
+<p>The "Break it down" unlock is bought through Google Play (or the App Store). The store handles payment; we never see your card. We receive a purchase token from the store, confirm it with the store, and record the store's order number against your install id so the unlock can be restored on a new phone.</p>
+
+<h2>Notifications and calendar</h2>
+<p>Nudges are scheduled on your phone; nothing about them is sent anywhere. If you switch on the calendar overlay, Along reads your calendar on the phone to count busy minutes per day. Event titles, times and attendees never leave the phone and are not stored by the app.</p>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>No advertising, no ad identifiers.</li>
+  <li>No analytics or tracking services. We do not use any third-party SDK that collects data.</li>
+  <li>No selling or sharing of data with anyone.</li>
+  <li>No medical claims. Along is a planner, not a treatment.</li>
+</ul>
+
+<h2>Keeping and deleting data</h2>
+<p>Without an account, there is nothing on our side to delete except the breakdown count for your install id, which is kept for as long as the unlock needs it. With an account, your data stays until you ask us to delete it: email <a href="mailto:jagotadikshant@gmail.com">jagotadikshant@gmail.com</a> from any address and we will delete the account and everything stored with it within 30 days. Deletion from inside the app is coming; until then, email is the way.</p>
+
+<h2>Children</h2>
+<p>Along is not directed at children under 13 and we do not knowingly collect information from them.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the date at the top changes and the app will say so. Questions: <a href="mailto:jagotadikshant@gmail.com">jagotadikshant@gmail.com</a>.</p>
+</main>
+</body>
+</html>
